@@ -1,0 +1,394 @@
+:root{
+    --primary:#548CFF;
+    --secondary:#141214;
+    --pure:#fff;
+
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:var(--secondary);
+    color: var(--pure);
+    font-size: 17px;
+}
+
+
+
+.container{
+    width: 1152px;
+    margin: 40px 100px;
+}
+
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.btn{
+    padding: 5px 10px;
+    border: 1px solid var(--pure);
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    background: var(--secondary);
+    color: var(--pure);
+    transition: all .3s ease;
+    text-align: center;
+}
+
+.btn:hover{
+    box-shadow: 0px 1px 10px 1px #ffffff;
+}
+
+.btn i{
+    margin: 0 5px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin: 0 15px;
+    padding: 5px 10px;
+    box-shadow: 0px 1px 10px 1px transparent;
+    border: 1px solid var(--secondary);
+    transition: box-shadow .3s ease;
+}
+
+li:hover{
+    border: 1px solid var(--pure);
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px 1px #ffffff;
+}
+
+a{
+    text-decoration: none;
+    color: var(--pure);
+    text-transform: uppercase;
+}
+
+.banner{
+    margin-top: 80px;
+}
+
+.banner .left{
+    width: 50%;
+}
+
+.banner .left h1{
+    position: relative;
+    bottom: 50px;
+}
+
+.banner .left h1::before{
+    content: "Programming Hero";
+    position: absolute;
+    color: var(--pure);
+    animation: typing 5s linear infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: 'P|';
+    }
+
+    4% {
+        content: 'Pr|';
+    }
+
+    8% {
+        content: 'Pro|';
+    }
+
+    12% {
+        content: 'Prog|';
+    }
+
+    16% {
+        content: 'Progr|';
+    }
+
+    20% {
+        content: 'Progra|';
+    }
+
+    24% {
+        content: 'Program|';
+    }
+
+    28% {
+        content: 'Programm|';
+    }
+
+    32% {
+        content: 'Programmi|';
+    }
+
+    36% {
+        content: 'Programmin|';
+    }
+
+    40% {
+        content: 'Programming|';
+    }
+
+    44% {
+        content: 'Programming |';
+    }
+
+    48% {
+        content: 'Programming H|';
+    }
+
+    52% {
+        content: 'Programming He|';
+    }
+
+    56% {
+        content: 'Programming Her|';
+    }
+
+    60% {
+        content: 'Programming Hero|';
+    }
+
+    64%,
+    83% {
+        content: 'Programming Hero|';
+    }
+
+    84% {
+        content: 'Programming Her|';
+    }
+
+    85% {
+        content: 'Programming He|';
+    }
+
+    86% {
+        content: 'Programming H|';
+    }
+
+    87% {
+        content: 'Programming |';
+    }
+
+    88% {
+        content: 'Programming|';
+    }
+
+    89% {
+        content: 'Programmin|';
+    }
+
+    90% {
+        content: 'Programmi|';
+    }
+
+    91% {
+        content: 'Programm|';
+    }
+
+    92% {
+        content: 'Program|';
+    }
+
+    93% {
+        content: 'Progra|';
+    }
+
+    94% {
+        content: 'Progr|';
+    }
+
+    95% {
+        content: 'Prog|';
+    }
+
+    96% {
+        content: 'Pro|';
+    }
+
+    97% {
+        content: 'Pr|';
+    }
+
+    98% {
+        content: 'P|';
+    }
+
+    99% {
+        content: '|';
+    }
+
+    100% {
+        content: '|';
+    }
+}
+
+.banner .left p{
+    margin: 20px 0;
+}
+
+.banner .right img{
+    border: 5px solid var(--pure);
+    border-radius: 20px;
+}
+
+.gallery-section{
+    margin: 150px 0;
+}
+
+.gallery-titel h1{
+    text-align: center;
+    margin: 50px 0;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.gallery{
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-img{
+    width: 100%;
+}
+
+.gallery-img img{
+    width: 25%;
+}
+
+.photo{
+    width: 280px;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.border{
+    background: var(--pure);
+    position: absolute;
+    transition: all .3s ease-in-out;
+}
+
+.border.top, .border.bottom{
+    width: 270px;
+    height: 4px;
+}
+
+.border.left, .border.right{
+    width: 4px;
+    height: 270px;
+}
+
+.border.top{
+    top: 5px;
+    right: 100%;
+}
+
+.border.bottom{
+    bottom:5px;
+    left: 100%;
+}
+
+.border.left{
+    left: 5px;
+    top: 100%;
+}
+
+.border.right{
+    right: 5px;
+    bottom: 100%;
+}
+
+.photo:hover .border.top{
+    right: 5px;
+}
+
+.photo:hover .border.bottom{
+    left: 5px;
+}
+
+.photo:hover .border.left{
+    top: 5px;
+}
+
+.photo:hover .border.right{
+    bottom: 5px;
+}
+
+.photo-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom:0;
+    left: 0px;
+    transform: translateY(400px);
+    text-align: center;
+    transition: .3s ease-out;
+}
+
+.photo:hover .photo-content{
+    transform: translateY(200px);
+}
+
+.photo::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    background: rgba(0,0,0,.5);
+}
+
+.photo:hover::before{
+    opacity: 1;
+}
+
+.footer{
+    border: 1px solid var(--pure);
+    border-radius: 10px;
+}
+
+.footer-content{
+    width: 20%;
+    height: auto;
+    margin: auto;
+}
+
+.footer-content>.footer-img{
+    margin: 20px 0;
+}
+
+.copyright{
+    text-align: center;
+    margin: 20px;
+}
+
